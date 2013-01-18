@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>ComingSoon Hot presta</title>
+<link rel="stylesheet" type="text/css" href="css/Style.css" />
+<script src="Js/countdownTimer.js"></script>
+<script src="Js/emailFormValidate.js"></script>
+<script type="text/javascript">
+//create a global variable. Can change the date it here
+window.Hotpresta = new Date("December 31, 2012 23:59:59");
+</script>
+</head>
+<body>  
+	<div id="header">
+		<div id="logo">
+			<h1><a href="index.html"><img src="Images/ComingSoon-Hot-presta-Logo.png" alt="ComingSoon-Hot-presta" width="219" height="119" /></a></h1>
+		</div>
+		<h2>Be patient</h2><br>
+		<h3>coming in December</h3>
+	</div>
+		<div id="content">
+			<div id="counter">
+				<div id="counter_time">
+					<ul>
+						<li><div id="daysBox"></div></li>
+						<li><div id="hoursBox"></div></li>
+						<li><div id="minsBox"></div></li>
+						<li><div id="secsBox"></div></li>
+					</ul>
+				</div>
+				<div class="name_time">
+					<ul>
+						<li>Days</li>
+						<li>Hours</li>
+						<li>Minutes</li>
+						<li>Seconds</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<br>
+			<div class="Pfeile_fix">
+				<div class="scala">
+					<div class="scala_instal">
+					</div>
+					<div class="scala_remains">
+					</div>
+				</div>
+				<div class="Pfeile">
+				</div>
+			</div>
+			<hr>
+			<div id="form_subscribe">
+				<form name="sendEmail" method="post" action="php/Send_email.php" onSubmit="return ValidateForm()">
+					<input name="email" type="email" placeholder="     please type in your email">
+					<input type="submit" name="submit" value="Subscribe">
+				</form>
+			</div>
+			<hr>
+		</div>
+	<div id="footer">
+		<div id="social_icons">
+			<a href="http://www.facebook.com/" target="_blank"><img src="Images/facebook_icon.png" alt="facebook_icon" width="32" height="32" /></a>
+			<a href="RSS.html" target="_blank"><img src="Images/RSS_icon.png" alt="RSS_icon" width="32" height="32" /></a>
+			<a href="https://twitter.com/" target="_blank"><img src="Images/twitter_icon.png" alt="twitter_icon" width="32" height="32" /></a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	//function countdownTimer()
+	countdownTimer();
+	</script>
+</body>
+
+</html>
+
